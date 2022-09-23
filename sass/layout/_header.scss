@@ -41,7 +41,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
   position: relative;
 
@@ -51,11 +51,11 @@
 .nav__link {
   &:focus,
   &:hover {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 
   &--current {
-    color: var(--accent-color);
+    color: $accent-color;
 
     &::after {
       position: absolute;
@@ -67,7 +67,7 @@
       border-radius: 2px;
       bottom: -1px;
 
-      background-color: var(--accent-color);
+      background-color: $accent-color;
     }
   }
 }
@@ -100,7 +100,7 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 

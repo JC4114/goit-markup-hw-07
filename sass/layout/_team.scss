@@ -2,7 +2,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 
-  background-color: var(--team-background-color);
+  background-color: $team-background-color;
 }
 
 .team__title {
@@ -17,7 +17,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  background-color: var(--white-background-color);
+  background-color: $white-background-color;
 }
 
 .team-list__item {
@@ -77,7 +77,7 @@
   &:hover,
   &:focus {
     color: #ffffff;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
 }
 

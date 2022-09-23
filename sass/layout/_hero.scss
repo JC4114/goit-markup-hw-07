@@ -13,7 +13,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero.jpg);
-  background-color: var(--hero-background-color);
+  background-color: $hero-background-color;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -32,7 +32,7 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: $white-text-color;
 }
 
 .hero__btn {
@@ -42,8 +42,8 @@
   border: 1px solid transparent;
   padding: 10px 32px;
 
-  background-color: var(--accent-color);
-  color: var(--white-text-color);
+  background-color: $accent-color;
+  color: $white-text-color;
 
   font-family: $mainFont;
   font-weight: 700;
@@ -59,7 +59,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--white-text-color);
-    color: var(--accent-color);
+    background-color: $white-text-color;
+    color: $accent-color;
   }
 }

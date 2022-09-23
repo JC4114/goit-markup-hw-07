@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--hero-background-color);
+  background-color: $hero-background-color;
 }
 
 .footer__flex {
@@ -15,7 +15,7 @@
 
 .footer__logo {
   &--white {
-    color: var(--white-text-color);
+    color: $white-text-color;
   }
 }
 
@@ -23,11 +23,19 @@
   margin-top: 20px;
 }
 .footer-contact__address {
-  color: var(--white-text-color);
+  color: $white-background-color;
 }
 
 .footer-contact__item {
   margin-top: 9px;
+  &:not(:first-child) .footer-contact__link {
+      color: $footer-text-color;
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        
+          }
+    }
 }
 
 .footer-contact__link {
@@ -35,13 +43,13 @@
   font-size: 14px;
   line-height: 1.71;
 
-  color: var(--footer-text-color);
+  // &:not(:first-child){color: $footer-text-color;}
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
     
   }
 }
@@ -59,7 +67,7 @@
   line-height: 1.14px;
   text-transform: uppercase;
 
-  color: var(--white-text-color);
+  color: $white-text-color;
 }
 
 .footer-list {
@@ -93,7 +101,7 @@
   &:hover,
   &:focus {
     color: #ffffff;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
 }
 
@@ -114,7 +122,7 @@
   line-height: 1.14px;
   text-transform: uppercase;
 
-  color: var(--white-text-color);
+  color: $white-text-color;
 }
 
 .footer-submit__input {
@@ -124,8 +132,8 @@
   border-radius: 4px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: var(--hero-background-color);
-  color: var(--white-text-color);
+  background-color: $hero-background-color;
+  color: $white-text-color;
 outline: none;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &::placeholder {
@@ -135,7 +143,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: rgba(255, 255, 255, 0.6);
   }
   &:focus{
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 }
 
@@ -149,9 +157,9 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 8px 29px;
   border-radius: 4px;
 
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--white-text-color);
+  color: $white-text-color;
 
   font-family: $mainFont;
   font-style: normal;

@@ -22,7 +22,7 @@
 .work-list__text {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: 0;
 
   padding: 27px 0px;
@@ -33,6 +33,6 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: var(--white-text-color);
+  color: $white-text-color;
   background-color: rgba(47, 48, 58, 0.8);
 }

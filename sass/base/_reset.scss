@@ -1,14 +1,13 @@
 body {
   font-family:$mainFont;
   letter-spacing: 0.03em;
-  background-color: var(--white-background-color);
-  color: var(--primary-text-color);
+  background-color: $white-background-color;
+  color: $primary-text-color;
 }
 
 .list {
-  list-style: none;
+ list-style: none;
 }
-
 .link {
   text-decoration: none;
 }
